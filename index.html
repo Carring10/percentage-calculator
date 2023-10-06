@@ -4,37 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <title>Percentage Calculator</title>
 </head>
 
 <body>
   <main>
-    <form id="form-1">
+    <h1>Percentage Calculator</h1>
+    <form id="form">
       <fieldset class="percetage-input-container">
         <p>What is <input class="percent-input"> % of <input class="number-input"></p>
+        <div class="result-container">
+          <button class="calculate-btn" id="btn-1" type="button">CALCULATE</button>
+          <p>Result: <span id="result"></span></p>
+        </div>
       </fieldset>
-      <div class="result-container">
-        <button class="calculate-btn" id="btn-1" type="button">Calculate</button>
-        <p>Result: <span id="result"></span></p>
-      </div>
     </form>
-    <form id="form-2">
+    <form id="form">
       <fieldset class="percetage-input-container">
-        <p><input class="first-number-input"> is what percent of <input class="second-number-input">?</p>        
+        <p><input class="first-number-input"> is what percent of <input class="second-number-input"> ?</p>        
+        <div class="result-container">
+          <button class="calculate-btn" id="btn-2" type="button">CALCULATE</button>
+          <p>Result: <span id="percentageResult"></span></p>
+        </div>
       </fieldset>
-      <div class="result-container">
-        <button class="calculate-btn" id="btn-2" type="button">Calculate</button>
-        <p>Result: <span id="percentageResult"></span></p>
-      </div>
     </form>
-    <form id="form-3">
+    <form id="form">
       <fieldset class="percetage-input-container">
-        <p>What is the percent difference from <input class="first-number-difference-input"> to <input class="second-number-difference-input">?</p>
+        <p>What is the percent difference from <input class="first-number-difference-input"> to <input class="second-number-difference-input"> ?</p>
+        <div class="result-container">
+          <button class="calculate-btn" id="btn-3" type="button">CALCULATE</button>
+          <p>Result: <span id="percentDifferenceResult"></span></p>
+        </div>
       </fieldset>
-      <div class="result-container">
-        <button class="calculate-btn" id="btn-3" type="button">Calculate</button>
-        <p>Result: <span id="percentDifferenceResult"></span></p>
-      </div>
     </form>
   </main>
 </body>

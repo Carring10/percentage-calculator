@@ -1,0 +1,80 @@
+body {
+  background-color: #10162f;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+h1 {
+  color: #66c4ff;
+  letter-spacing: 1px;
+}
+
+form {
+  width: 60%;
+  border: 1.5px solid #0a0e1f;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  padding: 30px;
+}
+
+p {
+  font-size: 20px;
+  margin: 0px
+}
+
+.result-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding: 0px 20px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+input {
+  width: 4rem;
+  padding: 4px;
+  background-color: #08080836;
+  color: #4ddba1;
+  font-size: 20px;
+  border: 1.5px solid #0a0e1f;
+  border-radius: 4px;
+  text-align: center;
+}
+
+input:focus {
+  outline: 1px solid #4ddba1;
+}
+
+.calculate-btn {
+  align-self: flex-end;
+  margin-left: 20px;
+  width: 7rem;
+  height: 2.5rem;
+  background-color: transparent;
+  color: #66c4ff;
+  border: 1.5px solid #66c4ff;
+  border-radius: 3px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: .5px;
+}
+
+span {
+  color: #4ddba1;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
