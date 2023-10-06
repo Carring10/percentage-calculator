@@ -31,3 +31,20 @@ function calculatePercentageOfNumber() {
 }
 
 btn2.addEventListener('click', calculatePercentageOfNumber);
+
+const firstNumberDifferenceInput = document.querySelector('.first-number-difference-input');
+const secondNumberDifferenceInput = document.querySelector('.second-number-difference-input');
+const btn3 = document.getElementById('btn-3');
+const percentDifferenceResultSpan = document.getElementById('percentDifferenceResult');
+
+function calculatePercentDifference() {
+    const firstNumberDifferenceInputValue = parseFloat(firstNumberDifferenceInput.value);
+    const secondNumberDifferenceInputValue = parseFloat(secondNumberDifferenceInput.value);
+
+    const percentDifference = Math.abs(((firstNumberDifferenceInputValue - secondNumberDifferenceInputValue) / ((firstNumberDifferenceInputValue + secondNumberDifferenceInputValue) / 2)) * 100);
+
+    console.log(percentDifference)
+    percentDifferenceResultSpan.textContent = percentDifference;
+}
+
+btn3.addEventListener('click', calculatePercentDifference);
