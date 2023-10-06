@@ -1,6 +1,7 @@
+// Function to calculate the percentage
 const percentInput = document.querySelector('.percent-input');
 const numberInput = document.querySelector('.number-input');
-const calculateBtn = document.querySelector('.calculate-btn');
+const btn1 = document.getElementById('btn-1');
 const resultSpan = document.getElementById('result');
 
 function calculatePercentage() {
@@ -12,4 +13,21 @@ function calculatePercentage() {
     resultSpan.textContent = result;
 }
 
-calculateBtn.addEventListener('click', calculatePercentage);
+btn1.addEventListener('click', calculatePercentage);
+
+// Function to find the percentage of 2 numbers
+const firstNumberInput = document.querySelector('.first-number-input');
+const secondNumberInput = document.querySelector('.second-number-input');
+const btn2 = document.getElementById('btn-2');
+const percentageResultSpan = document.getElementById('percentageResult');
+
+function calculatePercentageOfNumber() {
+    const firstNumber = parseFloat(firstNumberInput.value);
+    const secondNumber = parseFloat(secondNumberInput.value);
+
+    const percentage = (firstNumber / secondNumber) * 100;
+
+    percentageResultSpan.textContent = percentage;
+}
+
+btn2.addEventListener('click', calculatePercentageOfNumber);
