@@ -10,7 +10,7 @@ function calculatePercentage() {
 
     const result = (percentValue / 100) * numberValue;
 
-    resultSpan.textContent = result;
+    resultSpan.value = result;
 }
 
 btn1.addEventListener('click', calculatePercentage);
@@ -27,7 +27,7 @@ function calculatePercentageOfNumber() {
 
     const percentage = (firstNumber / secondNumber) * 100;
 
-    percentageResultSpan.textContent = percentage + " %";
+    percentageResultSpan.value = percentage + "%";
 }
 
 btn2.addEventListener('click', calculatePercentageOfNumber);
@@ -43,7 +43,7 @@ function calculatePercentDifference() {
 
     const percentDifference = Math.abs(((firstNumberDifferenceInputValue - secondNumberDifferenceInputValue) / ((firstNumberDifferenceInputValue + secondNumberDifferenceInputValue) / 2)) * 100);
 
-    percentDifferenceResultSpan.textContent = percentDifference + " %";
+    percentDifferenceResultSpan.value = percentDifference + "%";
 }
 
 btn3.addEventListener('click', calculatePercentDifference);

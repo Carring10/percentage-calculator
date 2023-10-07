@@ -1,5 +1,11 @@
+:root {
+  --dark-blue: #10162f;
+  --light-blue: #66c4ff;
+  --teal: #3fb483;
+}
+
 body {
-  background-color: #10162f;
+  background-color: var(--dark-blue);
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
@@ -9,15 +15,17 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  height: 100vh;
+  padding: 20px;
 }
 
 h1 {
-  color: #66c4ff;
+  color: var(light-blue);
   letter-spacing: 1px;
 }
 
 form {
-  width: 60%;
+  width: 55%;
   border: 1.5px solid #0a0e1f;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.11);
@@ -27,12 +35,12 @@ fieldset {
   display: flex;
   justify-content: space-between;
   border: none;
-  padding: 30px;
+  padding: 40px;
 }
 
 p {
   font-size: 20px;
-  margin: 0px
+  margin: 0px;
 }
 
 .result-container {
@@ -42,21 +50,7 @@ p {
   padding: 0px 20px;
   margin-right: 10px;
   text-align: center;
-}
-
-input {
-  width: 4rem;
-  padding: 4px;
-  background-color: #08080836;
-  color: #4ddba1;
-  font-size: 20px;
-  border: 1.5px solid #0a0e1f;
-  border-radius: 4px;
-  text-align: center;
-}
-
-input:focus {
-  outline: 1px solid #4ddba1;
+  
 }
 
 .calculate-btn {
@@ -65,16 +59,41 @@ input:focus {
   width: 7rem;
   height: 2.5rem;
   background-color: transparent;
-  color: #66c4ff;
-  border: 1.5px solid #66c4ff;
+  color: var(--light-blue);
+  border: 1.5px solid var(--light-blue);
   border-radius: 3px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   letter-spacing: .5px;
+  cursor: pointer;
+}
+
+input {
+  width: 4rem;
+  padding: 4px;
+  background-color: var(--dark-blue);
+  color: var(--teal);
+  font-size: 20px;
+  border: 1.5px solid #0a0e1f;
+  border-radius: 4px;
+  text-align: center;
+}
+
+input:focus {
+  outline: 1px solid var(--teal);
+}
+
+.reset {
+  border: none;
+  background-color: transparent;
+  color: var(--teal);
+  font-size: 25px;
+  padding: 0px;
+  cursor: pointer;
 }
 
 span {
-  color: #4ddba1;
+  color: var(--teal);
   font-weight: bold;
   letter-spacing: 1px;
 }

@@ -14,10 +14,11 @@
     <h1>Percentage Calculator</h1>
     <form id="form">
       <fieldset class="percetage-input-container">
-        <p>What is <input class="percent-input"> % of <input class="number-input"></p>
+        <p>What is <input class="percent-input"> % of <input class="number-input"> ?</p>
         <div class="result-container">
           <button class="calculate-btn" id="btn-1" type="button">CALCULATE</button>
-          <p>Result: <span id="result"></span></p>
+          <input id="result" readonly>
+          <button class="reset" type="reset">↻</button>
         </div>
       </fieldset>
     </form>
@@ -26,7 +27,8 @@
         <p><input class="first-number-input"> is what percent of <input class="second-number-input"> ?</p>        
         <div class="result-container">
           <button class="calculate-btn" id="btn-2" type="button">CALCULATE</button>
-          <p>Result: <span id="percentageResult"></span></p>
+          <input id="percentageResult" readonly>
+          <button class="reset" type="reset">↻</button>
         </div>
       </fieldset>
     </form>
@@ -35,7 +37,8 @@
         <p>What is the percent difference from <input class="first-number-difference-input"> to <input class="second-number-difference-input"> ?</p>
         <div class="result-container">
           <button class="calculate-btn" id="btn-3" type="button">CALCULATE</button>
-          <p>Result: <span id="percentDifferenceResult"></span></p>
+          <input id="percentDifferenceResult" readonly>
+          <button class="reset" type="reset">↻</button>
         </div>
       </fieldset>
     </form>
