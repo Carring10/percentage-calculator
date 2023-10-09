@@ -7,7 +7,7 @@
 body {
   background-color: var(--dark-blue);
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 main {
@@ -20,8 +20,9 @@ main {
 }
 
 h1 {
-  color: var(light-blue);
+  color: white;
   letter-spacing: 1px;
+  margin: 30px;
 }
 
 form {
@@ -39,38 +40,47 @@ fieldset {
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
   margin: 0px;
 }
 
 .result-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 1.5rem;
-  padding: 0px 20px;
-  margin-right: 10px;
+  /* padding: 0px 20px; */
   text-align: center;
-  
 }
 
 .calculate-btn {
-  align-self: flex-end;
-  margin-left: 20px;
   width: 7rem;
+  margin: 2px;
+  padding: 4px;
   height: 2.5rem;
   background-color: transparent;
   color: var(--light-blue);
   border: 1.5px solid var(--light-blue);
   border-radius: 3px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   cursor: pointer;
+  transition: 0.4s;
+}
+
+.calculate-btn:hover,
+.calculate-btn:focus {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  font-weight: bold;
 }
 
 input {
-  width: 4rem;
+  width: 5rem;
+  height: 1.8rem;
   padding: 4px;
+  margin: 2px;
   background-color: var(--dark-blue);
   color: var(--teal);
   font-size: 20px;
@@ -96,4 +106,100 @@ span {
   color: var(--teal);
   font-weight: bold;
   letter-spacing: 1px;
+}
+
+@media (max-width: 1090px) {
+  .calculate-btn {
+    width: 6rem;
+    font-size: 12px;
+  }
+
+  form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1058px) {
+  p {
+    font-size: 15px;
+  }
+
+  input {
+    width: 4rem;
+    height: 1.5rem;
+    font-size: 15px;
+  }
+
+  fieldset {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 905px) {
+  fieldset {
+    gap: 1rem;
+    align-items: center;
+    padding: 20px;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  fieldset {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  input {
+    width: 3rem;
+    height: 1rem;
+    font-size: 13px;
+  }
+
+  .calculate-btn {
+    width: 5rem;
+    height: 2rem;
+    font-size: 10px;
+  }
+
+  .reset {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 16px;
+    margin: 15px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .result-container {
+    gap: .5rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .result-container {
+    flex-direction: column;
+  }
 }
