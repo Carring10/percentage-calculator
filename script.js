@@ -41,8 +41,7 @@ function calculatePercentDifference() {
     const firstNumberDifferenceInputValue = parseFloat(firstNumberDifferenceInput.value);
     const secondNumberDifferenceInputValue = parseFloat(secondNumberDifferenceInput.value);
 
-    const percentDifference = Math.abs((firstNumberDifferenceInputValue - secondNumberDifferenceInputValue)) / (firstNumberDifferenceInputValue + secondNumberDifferenceInputValue) / 2 * 100;
-
+    const percentDifference = Math.abs((firstNumberDifferenceInputValue - secondNumberDifferenceInputValue) / ((firstNumberDifferenceInputValue + secondNumberDifferenceInputValue) / 2)) * 100;
     percentDifferenceResultSpan.value = percentDifference + "%";
 }
 

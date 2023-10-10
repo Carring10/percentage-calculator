@@ -1,12 +1,12 @@
 :root {
-  --dark-blue: #10162f;
-  --light-blue: #66c4ff;
-  --teal: #3fb483;
+  --bg: #ffffff;
+  --main: #f1f1f1;
+  --compliment: #35355c;
 }
 
 body {
-  background-color: var(--dark-blue);
-  color: white;
+  background-color: var(--bg);
+  color: black;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -20,14 +20,14 @@ main {
 }
 
 h1 {
-  color: white;
+  color: black;
   letter-spacing: 1px;
   margin: 30px;
 }
 
 form {
   width: 55%;
-  border: 1.5px solid #0a0e1f;
+  border: 1.5px solid #c9c9c9;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.11);
 }
@@ -42,6 +42,7 @@ fieldset {
 p {
   font-size: 18px;
   margin: 0px;
+  color: black;
 }
 
 .result-container {
@@ -58,9 +59,9 @@ p {
   margin: 2px;
   padding: 4px;
   height: 2.5rem;
-  background-color: transparent;
-  color: var(--light-blue);
-  border: 1.5px solid var(--light-blue);
+  background-color: var(--compliment);
+  color: white;
+  border: none;
   border-radius: 3px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -71,8 +72,7 @@ p {
 
 .calculate-btn:hover,
 .calculate-btn:focus {
-  background-color: var(--light-blue);
-  color: var(--dark-blue);
+  background-color: #22223bb7;
   font-weight: bold;
 }
 
@@ -81,29 +81,29 @@ input {
   height: 1.8rem;
   padding: 4px;
   margin: 2px;
-  background-color: var(--dark-blue);
-  color: var(--teal);
+  background-color: var(--bg);
+  color: var(--compliment);
   font-size: 20px;
-  border: 1.5px solid #0a0e1f;
+  border: 1.5px solid #c9c9c9;
   border-radius: 4px;
   text-align: center;
 }
 
 input:focus {
-  outline: 1px solid var(--teal);
+  outline: 1px solid var(--compliment);
 }
 
 .reset {
   border: none;
   background-color: transparent;
-  color: var(--teal);
+  color: var(--compliment);
   font-size: 25px;
   padding: 0px;
   cursor: pointer;
 }
 
 span {
-  color: var(--teal);
+  color: var(--compliment);
   font-weight: bold;
   letter-spacing: 1px;
 }
