@@ -46,3 +46,15 @@ function calculatePercentDifference() {
 }
 
 btn3.addEventListener('click', calculatePercentDifference);
+
+
+const btn4 = document.getElementById('btn-4');
+function calculateIncreaseDecrease() {
+    const newValue = parseFloat(document.querySelector('.new-value').value);
+    const oldValue = parseFloat(document.querySelector('.old-value').value);
+
+    const percentChange = (newValue - oldValue) / (oldValue) * 100;
+    document.getElementById('percentChangeResult').value = percentChange + "%";
+}
+
+btn4.addEventListener('click', calculateIncreaseDecrease);

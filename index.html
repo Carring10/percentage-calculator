@@ -11,7 +11,10 @@
 
 <body>
   <main>
-    <h1>Percentage Calculator</h1>
+    <div class="title-container">
+      <h1>Percentage Calculator</h1>
+      <p class="instructions">🛈 Use tab to move to the next field, press enter to calculate, use arrow keys to scroll through input fields.</p>
+    </div>
     <form id="form">
       <fieldset class="percetage-input-container">
         <p>What is <input class="percent-input"> % of <input class="number-input"> ?</p>
@@ -38,6 +41,16 @@
         <div class="result-container">
           <button class="calculate-btn" id="btn-3" type="button">CALCULATE</button>
           <input id="percentDifferenceResult" readonly>
+          <button class="reset" type="reset" title="Reset">↻</button>
+        </div>
+      </fieldset>
+    </form>
+    <form id="form">
+      <fieldset class="percetage-input-container">
+        <p>What is the percent increase/decrease from <br> <input class="old-value" placeholder="initial value"> to <input class="new-value" placeholder="final value"> ?</p>
+        <div class="result-container">
+          <button class="calculate-btn" id="btn-4" type="button">CALCULATE</button>
+          <input id="percentChangeResult" readonly>
           <button class="reset" type="reset" title="Reset">↻</button>
         </div>
       </fieldset>
