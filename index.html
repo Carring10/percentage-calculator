@@ -7,13 +7,28 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <title>Percentage Calculator</title>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WTRJRD9K');</script>
+  <!-- End Google Tag Manager -->
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTRJRD9K" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <main>
     <div class="title-container">
       <h1>Percentage Calculator</h1>
-      <p class="instructions">🛈 Use tab to move to the next field, press enter to calculate, use arrow keys to scroll through input fields.</p>
+      <p class="instructions">🛈 Use tab to move to the next field, press enter to calculate, use arrow keys to scroll
+        through input fields.</p>
     </div>
     <form id="form">
       <fieldset class="percetage-input-container">
@@ -27,7 +42,7 @@
     </form>
     <form id="form">
       <fieldset class="percetage-input-container">
-        <p><input class="first-number-input"> is what percent of <input class="second-number-input"> ?</p>        
+        <p><input class="first-number-input"> is what percent of <input class="second-number-input"> ?</p>
         <div class="result-container">
           <button class="calculate-btn" id="btn-2" type="button">CALCULATE</button>
           <input id="percentageResult" readonly>
@@ -37,7 +52,8 @@
     </form>
     <form id="form">
       <fieldset class="percetage-input-container">
-        <p>What is the percent difference from <input class="first-number-difference-input"> to <input class="second-number-difference-input"> ?</p>
+        <p>What is the percent difference from <input class="first-number-difference-input"> to <input
+            class="second-number-difference-input"> ?</p>
         <div class="result-container">
           <button class="calculate-btn" id="btn-3" type="button">CALCULATE</button>
           <input id="percentDifferenceResult" readonly>
@@ -47,7 +63,9 @@
     </form>
     <form id="form">
       <fieldset class="percetage-input-container">
-        <p>What is the percent increase/decrease from <br> <input class="old-value" placeholder="initial value"> to <input class="new-value" placeholder="final value"> ?</p>
+        <p>What is the percent increase/decrease from <br> <input class="old-value" placeholder="initial value"> to
+          <input class="new-value" placeholder="final value"> ?
+        </p>
         <div class="result-container">
           <button class="calculate-btn" id="btn-4" type="button">CALCULATE</button>
           <input id="percentChangeResult" readonly>
