@@ -4,10 +4,30 @@
   --compliment: #35355c;
 }
 
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
 body {
   background-color: var(--bg);
   color: black;
   font-family: "Montserrat", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav {
+  border-bottom: 5px solid #5d5da0;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0px 1px 10px #999;
+}
+
+.nav-contents {
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem 4rem;
 }
 
 main {
