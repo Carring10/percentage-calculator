@@ -286,5 +286,42 @@ nav {
   a {
     margin: 0px;
   }
+}
 
+@media (max-width: 570px) {
+  .title-container {
+    width: 30rem;
+  }
+
+  form {
+    width: 30rem;
+  }
+
+  fieldset {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 490px) {
+  .title-container {
+    width: 20rem;
+  }
+
+  form {
+    width: 20rem;
+  }
+
+  fieldset {
+    padding: 35px;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .inquiry {
+    text-align: center;
+  }
+
+  .result-container {
+    justify-content: center;
+  }
 }
