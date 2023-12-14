@@ -134,7 +134,7 @@ input {
 }
 
 input::placeholder {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 input:focus {
@@ -199,4 +199,92 @@ span {
   }
 }
 
+@media (max-width: 925px) {
+  .links {
+    font-size: 13px;
+  }
 
+  .nav-contents p {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 790px) {
+  nav {
+    padding: 1.2rem;
+  }
+
+  .nav-contents {
+    margin: 0rem 1rem;
+    font-size: 15px;
+  }
+
+  .title-container {
+    width: 35rem;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .instructions {
+    font-size: 10px;
+  }
+
+  form {
+    width: 35rem;
+  }
+
+  form p {
+    font-size: 12px;
+  }
+
+  input::placeholder {
+    font-size: 10px;
+  }
+
+  input {
+    width: 2.8rem;
+    height: 1rem;
+    font-size: 12px;
+  }
+
+  .calculate-btn {
+    width: 5.5rem;
+    font-size: 12px;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 740px) {
+nav {
+  padding: 1rem 0rem;
+}
+
+  .web-name-container {
+    width: 13rem;
+    text-align: center;
+  }
+
+  .links {
+    text-align: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    gap: 1rem;
+  }
+
+  a {
+    margin: 0px;
+  }
+
+}
