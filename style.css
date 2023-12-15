@@ -303,6 +303,17 @@ nav {
 }
 
 @media (max-width: 490px) {
+  .web-name-container {
+    width: 10rem;
+    font-size: 12px;
+  }
+
+  .links {
+    width: 12rem;
+    font-size: 12px;
+    gap: .5rem;
+  }
+
   .title-container {
     width: 20rem;
   }
@@ -312,7 +323,7 @@ nav {
   }
 
   fieldset {
-    padding: 35px;
+    padding: 25px;
     flex-direction: column;
     gap: 1rem;
   }
@@ -324,4 +335,38 @@ nav {
   .result-container {
     justify-content: center;
   }
+}
+
+@media (max-width: 330px) {
+  nav {
+    width: 100%;
+  }
+
+  .title-container {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 300px) {
+  fieldset {
+    padding: 15px;
+  }
+
+  .result-container {
+    gap: .5rem;
+  }
+
+  .calculate-btn {
+    width: 4.5rem;
+    font-size: 10px;
+    height: 2rem;
+}
 }
