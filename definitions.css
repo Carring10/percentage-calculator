@@ -13,7 +13,6 @@ body {
 
 nav {
   border-bottom: 5px solid #5d5da0;
-  width: 100%;
   padding: 1.5rem;
   box-shadow: 0px 1px 10px #999;
 }
@@ -75,5 +74,134 @@ p {
   color: black;
 }
 
+@media (max-width: 1340px) {
+  .content-container {
+    width: 60%;
+  }
 
+  h1 {
+    font-size: 25px;
+  }
+}
 
+@media (max-width: 1015px) {
+  .nav-contents {
+    margin: 0rem 1rem;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 925px) {
+  .links {
+    font-size: 13px;
+  }
+
+  .nav-contents p {
+    font-size: 13px;
+  }
+
+  .content-container {
+    width: 70%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  li {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 790px) {
+  nav {
+    padding: 1.2rem;
+  }
+
+  .nav-contents {
+    margin: 0rem 1rem;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 740px) {
+  nav {
+    padding: 1rem 0rem;
+  }
+
+  .web-name-container {
+    width: 13rem;
+    text-align: center;
+  }
+
+  .links {
+    text-align: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    gap: 1rem;
+  }
+
+  a {
+    margin: 0px;
+  }
+
+  .content-container {
+    gap: .5rem;
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin: 10px 0px;
+  }
+}
+
+@media (max-width: 490px) {
+  .web-name-container {
+    width: 10rem;
+    font-size: 12px;
+  }
+
+  .links {
+    width: 12rem;
+    font-size: 12px;
+    gap: 0.5rem;
+  }
+
+  .content-container {
+    gap: .2rem;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 13px;
+  }
+
+  li {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 330px) {
+  nav {
+    width: 100%;
+  }
+ 
+  .content-container {
+    width: 98%
+  }
+}

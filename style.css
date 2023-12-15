@@ -41,7 +41,7 @@ a:hover {
 }
 
 .calculator-link {
- text-decoration: underline;
+  text-decoration: underline;
 }
 
 main {
@@ -156,7 +156,7 @@ span {
   letter-spacing: 1px;
 }
 
- @media (max-width: 1015px) {
+@media (max-width: 1015px) {
   .nav-contents {
     margin: 0rem 1rem;
     font-size: 15px;
@@ -220,7 +220,7 @@ span {
 
   .nav-contents {
     margin: 0rem 1rem;
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .title-container {
@@ -261,9 +261,9 @@ span {
 }
 
 @media (max-width: 740px) {
-nav {
-  padding: 1rem 0rem;
-}
+  nav {
+    padding: 1rem 0rem;
+  }
 
   .web-name-container {
     width: 13rem;
@@ -311,7 +311,7 @@ nav {
   .links {
     width: 12rem;
     font-size: 12px;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   .title-container {
@@ -361,12 +361,12 @@ nav {
   }
 
   .result-container {
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   .calculate-btn {
     width: 4.5rem;
     font-size: 10px;
     height: 2rem;
-}
+  }
 }
