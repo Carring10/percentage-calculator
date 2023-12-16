@@ -200,6 +200,16 @@ p {
   nav {
     width: 100%;
   }
+
+  .links {
+    gap: 0rem;
+    padding: 5px;
+    width: 8rem;
+  }
+
+  .definitions-link {
+    display: none;
+  }
  
   .content-container {
     width: 98%

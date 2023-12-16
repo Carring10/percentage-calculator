@@ -342,6 +342,16 @@ span {
     width: 100%;
   }
 
+  .links {
+    gap: 0rem;
+    padding: 5px;
+    width: 8rem;
+  }
+
+  .calculator-link {
+    display: none;
+  }
+
   .title-container {
     width: 100%;
   }
