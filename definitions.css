@@ -169,18 +169,19 @@ p {
 @media (max-width: 490px) {
   .web-name-container {
     width: 10rem;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .links {
     width: 12rem;
-    font-size: 12px;
+    font-size: 10px;
     gap: 0.5rem;
   }
 
   .content-container {
     gap: .2rem;
-    width: 90%;
+    /* width: 90%; */
+    padding: 15px;
   }
 
   h1 {
@@ -197,6 +198,10 @@ p {
 }
 
 @media (max-width: 330px) {
+  html {
+    width: 100%;
+  }
+
   nav {
     width: 100%;
   }
@@ -204,14 +209,14 @@ p {
   .links {
     gap: 0rem;
     padding: 5px;
-    width: 8rem;
+    width: 6.5rem;
   }
 
   .definitions-link {
     display: none;
   }
  
-  .content-container {
-    width: 98%
+  ul {
+    padding: 0px 0px 0px 25px;
   }
 }

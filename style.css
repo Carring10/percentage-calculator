@@ -310,7 +310,7 @@ span {
 
   .links {
     width: 12rem;
-    font-size: 12px;
+    font-size: 10px;
     gap: 0.5rem;
   }
 
@@ -338,6 +338,10 @@ span {
 }
 
 @media (max-width: 330px) {
+  html {
+    width: 100%;
+  }
+  
   nav {
     width: 100%;
   }
