@@ -51,6 +51,17 @@
           <input id="result" readonly>
           <button class="reset" type="reset" title="Reset">↻</button>
         </div>
+        <div class="formula-container">
+          <div class="equals">
+            <p>percentage of x = </p>
+          </div>
+          <div class="fraction">
+            <span class="numerator">percentage</span>
+            <span class="denominator">100</span>
+          </div>
+          <div class="multiply">
+            <p>&#215; number value</p>
+          </div>
       </fieldset>
     </form>
     <form id="form">
@@ -63,12 +74,24 @@
           <input id="percentageResult" readonly>
           <button class="reset" type="reset" title="Reset">↻</button>
         </div>
+        <div class="formula-container">
+          <div class="equals">
+            <p>percentage value = </p>
+          </div>
+          <div class="fraction">
+            <span class="numerator">| a - b |</span>
+            <span class="denominator">( a + b ) &#247; 2</span>
+          </div>
+          <div class="multiply">
+            <p >&#215; 100</p>
+          </div>
+        </div>
       </fieldset>
     </form>
     <form id="form">
       <fieldset class="percetage-input-container">
         <div class="inquiry">
-          <p>What is the percent increase/decrease from <br> <input class="old-value" placeholder="initial value"> to
+          <p>What is the percent increase / decrease from <br> <input class="old-value" placeholder="initial value"> to
             <input class="new-value" placeholder="final value"> ?
           </p>
         </div>
@@ -77,18 +100,17 @@
           <input id="percentChangeResult" readonly>
           <button class="reset" type="reset" title="Reset">↻</button>
         </div>
-      </fieldset>
-    </form>
-    <form id="form">
-      <fieldset class="percetage-input-container">
-        <div class="inquiry">
-          <p>What is the percent difference from <input class="first-number-difference-input"> to <input
-              class="second-number-difference-input"> ?</p>
-        </div>
-        <div class="result-container">
-          <button class="calculate-btn" id="btn-3" type="button">CALCULATE</button>
-          <input id="percentDifferenceResult" readonly>
-          <button class="reset" type="reset" title="Reset">↻</button>
+        <div class="formula-container">
+          <div class="equals">
+            <p>percentage change = </p>
+          </div>
+          <div class="fraction">
+            <span class="numerator">initial value - final value</span>
+            <span class="denominator">initial value</span>
+          </div>
+          <div class="multiply">
+            <p >&#215; 100</p>
+          </div>
         </div>
       </fieldset>
     </form>

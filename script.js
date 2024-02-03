@@ -15,6 +15,12 @@ function calculatePercentage() {
 
 btn1.addEventListener('click', calculatePercentage);
 
+numberInput.onkeydown = function(event){
+    if (event.key === 'Enter') {
+        calculatePercentage();        
+    }
+}
+
 // Function to find the percentage of 2 numbers
 const firstNumberInput = document.querySelector('.first-number-input');
 const secondNumberInput = document.querySelector('.second-number-input');
@@ -32,23 +38,15 @@ function calculatePercentageOfNumber() {
 
 btn2.addEventListener('click', calculatePercentageOfNumber);
 
-const firstNumberDifferenceInput = document.querySelector('.first-number-difference-input');
-const secondNumberDifferenceInput = document.querySelector('.second-number-difference-input');
-const btn3 = document.getElementById('btn-3');
-const percentDifferenceResultSpan = document.getElementById('percentDifferenceResult');
-
-function calculatePercentDifference() {
-    const firstNumberDifferenceInputValue = parseFloat(firstNumberDifferenceInput.value);
-    const secondNumberDifferenceInputValue = parseFloat(secondNumberDifferenceInput.value);
-
-    const percentDifference = Math.abs((firstNumberDifferenceInputValue - secondNumberDifferenceInputValue) / ((firstNumberDifferenceInputValue + secondNumberDifferenceInputValue) / 2)) * 100;
-    percentDifferenceResultSpan.value = percentDifference + "%";
+secondNumberInput.onkeydown = function(event){
+    if (event.key === 'Enter') {
+        calculatePercentageOfNumber();        
+    }
 }
 
-btn3.addEventListener('click', calculatePercentDifference);
-
-
 const btn4 = document.getElementById('btn-4');
+const newValueInput = document.querySelector('.new-value');
+
 function calculateIncreaseDecrease() {
     const newValue = parseFloat(document.querySelector('.new-value').value);
     const oldValue = parseFloat(document.querySelector('.old-value').value);
@@ -58,3 +56,9 @@ function calculateIncreaseDecrease() {
 }
 
 btn4.addEventListener('click', calculateIncreaseDecrease);
+
+newValueInput.onkeydown = function(event){
+    if (event.key === 'Enter') {
+        calculateIncreaseDecrease();        
+    }
+}
