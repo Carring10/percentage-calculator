@@ -162,7 +162,7 @@ input:focus {
   display: flex;
   flex-direction: row;
   font-size: 12px;
-  color: #575757
+  color: #575757;
 }
 
 .equals p {
@@ -182,7 +182,8 @@ input:focus {
   vertical-align: middle;
 }
 
-.fraction .numerator, .fraction .denominator {
+.fraction .numerator,
+.fraction .denominator {
   display: block;
 }
 
@@ -207,59 +208,22 @@ input:focus {
     font-size: 15px;
   }
 
-  .title-container {
-    width: 45rem;
+  @media (max-width: 925px) {
+    .links {
+      font-size: 13px;
+    }
+
+    .nav-contents p {
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
   }
 
-  h1 {
-    font-size: 25px;
-  }
-
-  .instructions {
-    font-size: 12px;
-  }
-
-  form {
-    width: 45rem;
-  }
-
-  form p {
-    font-size: 14px;
-  }
-
-  input::placeholder {
-    font-size: 10px;
-  }
-
-  input {
-    width: 3rem;
-    height: 1.2rem;
-    font-size: 14px;
-  }
-
-  .calculate-btn {
-    width: 5.5rem;
-    font-size: 12px;
-    height: 2.2rem;
-  }
-}
-
-@media (max-width: 925px) {
-  .links {
-    font-size: 13px;
-  }
-
-  .nav-contents p {
-    font-size: 13px;
-  }
-
-  h1 {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 790px) {
-  nav {
+  @media (max-width: 790px) {
+    /* nav {
     padding: 1.2rem;
   }
 
@@ -302,130 +266,214 @@ input:focus {
     width: 5.5rem;
     font-size: 12px;
     height: 2rem;
-  }
-}
-
-@media (max-width: 740px) {
-  nav {
-    padding: 1rem 0rem;
+  } */
   }
 
-  .web-name-container {
-    width: 13rem;
-    text-align: center;
+  @media (max-width: 740px) {
+    nav {
+      padding: 1rem 0rem;
+    }
+
+    .web-name-container {
+      width: 13rem;
+      text-align: center;
+    }
+
+    .links {
+      text-align: center;
+    }
   }
 
-  .links {
-    text-align: center;
-  }
-}
+  @media (max-width: 680px) {
+    .links {
+      display: flex;
+      flex-direction: column;
+      width: 15rem;
+      gap: 1rem;
+    }
 
-@media (max-width: 680px) {
-  .links {
-    display: flex;
-    flex-direction: column;
-    width: 15rem;
-    gap: 1rem;
-  }
+    .title-container {
+      width: 35rem;
+    }
 
-  a {
-    margin: 0px;
-  }
-}
+    form {
+      width: 35rem;
+    }
 
-@media (max-width: 570px) {
-  .title-container {
-    width: 30rem;
+    a {
+      margin: 0px;
+    }
   }
 
-  form {
-    width: 30rem;
+  @media (max-width: 570px) {
+    .title-container {
+      width: 30rem;
+    }
+
+    form {
+      width: 30rem;
+    }
+
+    form p {
+      font-size: 15px;
+    }
+
+    fieldset {
+      padding: 35px;
+    }
   }
 
-  fieldset {
-    padding: 35px;
-  }
-}
+  @media (max-width: 490px) {
+    .web-name-container {
+      width: 10rem;
+      font-size: 12px;
+    }
 
-@media (max-width: 490px) {
-  .web-name-container {
-    width: 10rem;
-    font-size: 12px;
-  }
+    .links {
+      width: 12rem;
+      font-size: 10px;
+      gap: 0.5rem;
+    }
 
-  .links {
-    width: 12rem;
-    font-size: 10px;
-    gap: 0.5rem;
-  }
+    .title-container {
+      width: 25rem;
+    }
 
-  .title-container {
-    width: 20rem;
-  }
+    form {
+      width: 25rem;
+    }
 
-  form {
-    width: 20rem;
-  }
+    fieldset {
+      padding: 25px;
+      flex-direction: column;
+      gap: 1rem;
+    }
 
-  fieldset {
-    padding: 25px;
-    flex-direction: column;
-    gap: 1rem;
-  }
+    .inquiry {
+      text-align: center;
+    }
 
-  .inquiry {
-    text-align: center;
-  }
+    input {
+      width: 4rem;
+      height: 1.5rem;
+      font-size: 12px;
+    }
 
-  .result-container {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 330px) {
-  html {
-    width: 100%;
+    .result-container {
+      justify-content: center;
+    }
   }
 
-  nav {
-    width: 100%;
+  @media (max-width: 415px) {
+    html {
+      width: 100%;
+    }
+
+    nav {
+      width: 100%;
+    }
+
+    .links {
+      gap: 0rem;
+      padding: 5px;
+      width: 8rem;
+    }
+
+    .calculator-link {
+      display: none;
+    }
+
+    .title-container {
+      width: 98%;
+    }
+
+    h1 {
+      font-size: 15px;
+    }
+
+    .instructions {
+      font-size: 12px;
+    }
+
+    form {
+      width: 98%;
+    }
+
+    fieldset {
+      padding: 15px;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .calculate-btn {
+      width: 6rem;
+      font-size: 12px;
+      height: 2.5rem;
+    }
+
+    .reset {
+      font-size: 25px;
+    }
   }
 
-  .links {
-    gap: 0rem;
-    padding: 5px;
-    width: 8rem;
+  @media (max-width: 395px) {
+    fieldset {
+      padding: 15px;
+    }
+
+    form p {
+      font-size: 13px;
+    }
+
+    .result-container {
+      gap: 0.5rem;
+    }
+
+    .formula-container {
+      font-size: 10px;
+    }
   }
 
-  .calculator-link {
-    display: none;
-  }
+  @media (max-width: 345px) {
+    .web-name-container p{
+      font-size: 10px;
+      width: 8rem;
+    }
 
-  .title-container {
-    width: 100%;
-  }
+    .instructions {
+      font-size: 10px;
+    }
 
-  h1 {
-    font-size: 15px;
-  }
+    fieldset {
+      padding: 10px;
+    }
 
-  form {
-    width: 100%;
-  }
-}
+    form p {
+      font-size: 12px;
+    }
 
-@media (max-width: 300px) {
-  fieldset {
-    padding: 15px;
-  }
+    input {
+      width: 3rem;
+      height: 1rem;
+      margin: 6px 8px;
+    }
 
-  .result-container {
-    gap: 0.5rem;
-  }
+    input::placeholder {
+      font-size: 10px;
+    }
 
-  .calculate-btn {
-    width: 4.5rem;
-    font-size: 9px;
-    height: 2rem;
+    .calculate-btn {
+      width: 5rem;
+      height: 2rem;
+      font-size: 10px;
+    }
+
+    .result-container {
+      gap: 0.5rem;
+    }
+
+    .formula-container {
+      font-size: 8px;
+    }
   }
 }
