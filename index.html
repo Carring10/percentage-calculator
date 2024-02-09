@@ -41,79 +41,91 @@
       <p class="instructions">🛈 Use tab to move to the next field, press enter to calculate, use arrow keys to scroll
         through input fields.</p>
     </div>
-    <form id="form">
-      <fieldset class="percetage-input-container">
-        <div class="inquiry">
-          <p>What is <input class="percent-input"> % of <input class="number-input"> ?</p>
-        </div>
-        <div class="result-container">
-          <button class="calculate-btn" id="btn-1" type="button">CALCULATE</button>
-          <input id="result" readonly>
-          <button class="reset" type="reset" title="Reset">↻</button>
-        </div>
-        <div class="formula-container">
-          <div class="equals">
-            <p>percentage of x = </p>
+    <div class="form-container">
+      <form id="form">
+        <fieldset class="percetage-input-container">
+          <div class="inquiry">
+            <p>What is <input class="percent-input"> % of <input class="number-input"> ?</p>
           </div>
-          <div class="fraction">
-            <span class="numerator">percentage</span>
-            <span class="denominator">100</span>
+          <div class="result-container">
+            <button class="calculate-btn" id="btn-1" type="button">CALCULATE</button>
+            <div class="result-row">
+              <p>Result:</p>
+              <input id="result" readonly class="result">
+              <button class="reset" type="reset" title="Reset">↻</button>
+            </div>
           </div>
-          <div class="multiply">
-            <p>&#215; number value</p>
+          <div class="formula-container">
+            <div class="equals">
+              <p>percentage of x = </p>
+            </div>
+            <div class="fraction">
+              <span class="numerator">percentage</span>
+              <span class="denominator">100</span>
+            </div>
+            <div class="multiply">
+              <p>&#215; number value</p>
+            </div>
+        </fieldset>
+      </form>
+      <form id="form">
+        <fieldset class="percetage-input-container">
+          <div class="inquiry">
+            <p><input class="first-number-input"> is what percent of <input class="second-number-input"> ?</p>
           </div>
-      </fieldset>
-    </form>
-    <form id="form">
-      <fieldset class="percetage-input-container">
-        <div class="inquiry">
-          <p><input class="first-number-input"> is what percent of <input class="second-number-input"> ?</p>
-        </div>
-        <div class="result-container">
-          <button class="calculate-btn" id="btn-2" type="button">CALCULATE</button>
-          <input id="percentageResult" readonly>
-          <button class="reset" type="reset" title="Reset">↻</button>
-        </div>
-        <div class="formula-container">
-          <div class="equals">
-            <p>percentage value = </p>
+          <div class="result-container">
+            <button class="calculate-btn" id="btn-2" type="button">CALCULATE</button>
+            <div class="result-row">
+              <p>Result:</p>
+              <input id="percentageResult" readonly class="result">
+              <button class="reset" type="reset" title="Reset">↻</button>
+            </div>
           </div>
-          <div class="fraction">
-            <span class="numerator">| a - b |</span>
-            <span class="denominator">( a + b ) &#247; 2</span>
+          <div class="formula-container">
+            <div class="equals">
+              <p>percentage value = </p>
+            </div>
+            <div class="fraction">
+              <span class="numerator">| a - b |</span>
+              <span class="denominator">( a + b ) &#247; 2</span>
+            </div>
+            <div class="multiply">
+              <p>&#215; 100</p>
+            </div>
           </div>
-          <div class="multiply">
-            <p >&#215; 100</p>
+        </fieldset>
+      </form>
+      <form id="form">
+        <fieldset class="percetage-input-container">
+          <div class="inquiry">
+            <p>What is the percent increase / decrease from <br> <input class="old-value" placeholder="initial value">
+              to
+              <input class="new-value" placeholder="final value"> ?
+            </p>
           </div>
-        </div>
-      </fieldset>
-    </form>
-    <form id="form">
-      <fieldset class="percetage-input-container">
-        <div class="inquiry">
-          <p>What is the percent increase / decrease from <br> <input class="old-value" placeholder="initial value"> to
-            <input class="new-value" placeholder="final value"> ?
-          </p>
-        </div>
-        <div class="result-container">
-          <button class="calculate-btn" id="btn-4" type="button">CALCULATE</button>
-          <input id="percentChangeResult" readonly>
-          <button class="reset" type="reset" title="Reset">↻</button>
-        </div>
-        <div class="formula-container">
-          <div class="equals">
-            <p>percent change = </p>
+          <div class="result-container">
+            <button class="calculate-btn" id="btn-4" type="button">CALCULATE</button>
+            <div class="result-row">
+              <p>Result:</p>
+              <input id="percentChangeResult" readonly class="result">
+              <button class="reset" type="reset" title="Reset">↻</button>
+            </div>
           </div>
-          <div class="fraction">
-            <span class="numerator">initial value - final value</span>
-            <span class="denominator">initial value</span>
+          <div class="formula-container">
+            <div class="equals">
+              <p>percent change = </p>
+            </div>
+            <div class="fraction">
+              <span class="numerator">initial value - final value</span>
+              <span class="denominator">initial value</span>
+            </div>
+            <div class="multiply">
+              <p>&#215; 100</p>
+            </div>
           </div>
-          <div class="multiply">
-            <p>&#215; 100</p>
-          </div>
-        </div>
-      </fieldset>
-    </form>
+        </fieldset>
+      </form>
+    </div>
   </main>
 </body>
 <script src="script.js"></script>

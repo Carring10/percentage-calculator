@@ -51,11 +51,16 @@ main {
   align-items: center;
   gap: 1rem;
   height: 100vh;
-  margin-top: 20px;
+  margin-top: 50px;
+}
+
+.form-container {
+  display: flex;
+  gap: 1rem;
 }
 
 .title-container {
-  width: 40rem;
+  width: 75rem;
 }
 
 h1 {
@@ -72,7 +77,8 @@ h1 {
 }
 
 form {
-  width: 40rem;
+  width: 25rem;
+  height: 30rem;
   border: 1.5px solid #c9c9c9;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.11);
@@ -82,10 +88,12 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  /* justify-content: space-between; */
+  justify-content: space-between;
+  height: 90%;
+  gap: 1rem;
   border: none;
   padding: 25px;
+  position: relative;
 }
 
 .inquiry {
@@ -93,21 +101,23 @@ fieldset {
 }
 
 p {
-  font-size: 18px;
+  font-size: 17px;
   margin: 0px;
   color: black;
 }
 
 .result-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  gap: 2rem;
   text-align: center;
+  position: absolute;
+  top: 35%; 
+  width: 100px;
 }
 
 .calculate-btn {
-  width: 7rem;
+  width: 14rem;
   margin: 2px;
   padding: 4px;
   height: 2.5rem;
@@ -122,6 +132,17 @@ p {
   transition: 0.4s;
 }
 
+.result-row {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.result {
+  width: 6rem;
+}
+
 .calculate-btn:hover,
 .calculate-btn:focus {
   background-color: #5d5da0;
@@ -129,10 +150,10 @@ p {
 }
 
 input {
-  width: 5.5rem;
+  width: 4rem;
   height: 1.8rem;
   padding: 4px;
-  margin: 8px 10px;
+  margin: 8px 5px;
   background-color: var(--bg);
   color: var(--compliment);
   font-size: 18px;
@@ -202,6 +223,69 @@ input:focus {
   text-align: center;
 }
 
+@media (max-width: 1262px) {
+  form {
+    width: 22rem;
+  }
+
+  form p {
+    font-size: 14px;
+  }
+
+  .title-container {
+    width: 68rem;
+  }
+}
+
+@media (max-width: 1126px) {
+  .title-container {
+    width: 40rem;
+  }
+
+  .form-container {
+    flex-direction: column;
+  }
+
+  fieldset {
+    justify-content: center;
+    height: auto;
+    gap: 10px;
+  }
+
+  form {
+    width: 40rem;
+    height: auto;
+  }
+
+  form p {
+    font-size: 18px;
+  }
+
+  .result-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .result-row p {
+    font-size: 16px;
+  }
+
+  .calculate-btn {
+    width: 12rem;
+    margin: 2px;
+    padding: 4px;
+    height: 2.5rem;
+  }
+
+  .result {
+    width: 5rem;
+  }
+ 
+}
+
 @media (max-width: 1015px) {
   .nav-contents {
     margin: 0rem 1rem;
@@ -220,53 +304,6 @@ input:focus {
     h1 {
       font-size: 20px;
     }
-  }
-
-  @media (max-width: 790px) {
-    /* nav {
-    padding: 1.2rem;
-  }
-
-  .nav-contents {
-    margin: 0rem 1rem;
-    font-size: 13px;
-  }
-
-  .title-container {
-    width: 35rem;
-  }
-
-  h1 {
-    font-size: 20px;
-  }
-
-  .instructions {
-    font-size: 10px;
-  }
-
-  form {
-    width: 35rem;
-  }
-
-  form p {
-    font-size: 12px;
-  }
-
-  input::placeholder {
-    font-size: 10px;
-  }
-
-  input {
-    width: 2.8rem;
-    height: 1rem;
-    font-size: 12px;
-  }
-
-  .calculate-btn {
-    width: 5.5rem;
-    font-size: 12px;
-    height: 2rem;
-  } */
   }
 
   @media (max-width: 740px) {
@@ -320,6 +357,10 @@ input:focus {
 
     fieldset {
       padding: 35px;
+    }
+
+    .result-row p {
+      font-size: 15px;
     }
   }
 
@@ -405,8 +446,12 @@ input:focus {
       gap: 1rem;
     }
 
+    .result-row p {
+      font-size: 13px;
+    }
+
     .calculate-btn {
-      width: 6rem;
+      width: 9rem;
       font-size: 12px;
       height: 2.5rem;
     }
@@ -463,7 +508,7 @@ input:focus {
     }
 
     .calculate-btn {
-      width: 5rem;
+      width: 9rem;
       height: 2rem;
       font-size: 10px;
     }
@@ -475,5 +520,11 @@ input:focus {
     .formula-container {
       font-size: 8px;
     }
+  }
+}
+
+@media (max-width: 300px) {
+  .formula-container {
+    font-size: 7px;
   }
 }
